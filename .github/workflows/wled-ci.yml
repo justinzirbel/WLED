@@ -59,7 +59,7 @@ jobs:
       # env:
       #   WLED_RELEASE: True
       # run: pio run -e ${{ matrix.environment }}
-      run: pio run -e d1_mini
+      run: pio run -e d1_mini -e esp32dev -e lolin_s2_mini
     # - uses: actions/upload-artifact@v2
     #   with:
     #     # name: firmware-${{ matrix.environment }}
