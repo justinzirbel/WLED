@@ -83,4 +83,4 @@ jobs:
         files: |
           *.bin
       env:
-        GITHUB_TOKEN: thisisasecret
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
