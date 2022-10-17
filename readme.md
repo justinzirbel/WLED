@@ -2,7 +2,7 @@
   <img src="/images/wled_logo_akemi.png">
 </p>
 
-# Welcome to my project WLED! ✨
+# This is my customized version of Aircookie's awesome WLED project.
 
 A fast and feature-rich implementation of an ESP8266/ESP32 webserver to control NeoPixel (WS2812B, WS2811, SK6812) LEDs or also SPI based chipsets like the WS2801 and APA102!
 
