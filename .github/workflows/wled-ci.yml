@@ -51,14 +51,19 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
     - name: Install PlatformIO
-      run: pip install -r requirements.txt
+      # run: pip install -r requirements.txt
+      run: |
+        python -m pip install --upgrade pip
+        pip install --upgrade platformio
     - name: Build firmware
-      env:
-        WLED_RELEASE: True
-      run: pio run -e ${{ matrix.environment }}
+      # env:
+      #   WLED_RELEASE: True
+      # run: pio run -e ${{ matrix.environment }}
+      run: pio run -e d1_mini
     - uses: actions/upload-artifact@v2
       with:
-        name: firmware-${{ matrix.environment }}
+        # name: firmware-${{ matrix.environment }}
+        name: firmware-d1_mini
         path: |
           build_output/firmware/*.bin
           build_output/firmware/*.gz
@@ -69,21 +74,21 @@ jobs:
         path: build_output/release/*.bin
   
   
-  release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    # needs: [get_default_envs, build]
-    needs: build
-    if: startsWith(github.ref, 'refs/tags/')
-    steps:
-    - uses: actions/download-artifact@v2
-      with:
-        name: firmware-release
-    - name: Create draft release
-      uses: softprops/action-gh-release@v1
-      with:
-        draft: True
-        files: |
-          *.bin
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  # release:
+  #   name: Create Release
+  #   runs-on: ubuntu-latest
+  #   # needs: [get_default_envs, build]
+  #   needs: build
+  #   if: startsWith(github.ref, 'refs/tags/')
+  #   steps:
+  #   - uses: actions/download-artifact@v2
+  #     with:
+  #       name: firmware-release
+  #   - name: Create draft release
+  #     uses: softprops/action-gh-release@v1
+  #     with:
+  #       draft: True
+  #       files: |
+  #         *.bin
+  #     env:
+  #       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
