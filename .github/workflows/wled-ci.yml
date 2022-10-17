@@ -60,18 +60,21 @@ jobs:
       #   WLED_RELEASE: True
       # run: pio run -e ${{ matrix.environment }}
       run: pio run -e d1_mini
-    - uses: actions/upload-artifact@v2
-      with:
-        # name: firmware-${{ matrix.environment }}
-        name: firmware-d1_mini
-        path: |
-          build_output/firmware/*.bin
-          build_output/firmware/*.gz
+    # - uses: actions/upload-artifact@v2
+    #   with:
+    #     # name: firmware-${{ matrix.environment }}
+    #     name: firmware-d1_mini
+    #     path: |
+    #       build_output/firmware/*.bin
+    #       build_output/firmware/*.gz
     - uses: actions/upload-artifact@v2
       # if: startsWith(github.ref, 'refs/tags/')
       with:
         name: firmware-release
-        path: build_output/release/*.bin
+        # path: build_output/release/*.bin
+        path: |
+           build_output/firmware/*.bin
+           build_output/firmware/*.gz
   
   
   release:
