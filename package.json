@@ -1,6 +1,7 @@
 {
   "name": "wled",
-  "version": "0.13.3",
+  "version": "0.13.3.4",
+  "releaseName": "Dr. Krusty GIT",
   "description": "Tools for WLED project",
   "main": "tools/cdata.js",
   "directories": {
