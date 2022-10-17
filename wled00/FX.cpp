@@ -987,6 +987,10 @@ uint16_t WS2812FX::mode_candy_cane(void) {
   return running(RED, WHITE);
 }
 
+uint16_t WS2812FX::mode_mint_candy_cane(void) {
+  return running(GREEN, WHITE);
+}
+
 /*
  * Alternating orange/purple pixels running.
  */

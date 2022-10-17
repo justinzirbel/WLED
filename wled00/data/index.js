@@ -544,8 +544,8 @@ function populateInfo(i)
 		}
 	}
 
-	var vcn = "Kuuhaku";
-	if (i.ver.startsWith("0.13.")) vcn = "Toki";
+	var vcn = "##RELEASENAME##";
+	//if (i.ver.startsWith("0.13.")) vcn = "Toki-Cust";
 	if (i.cn) vcn = i.cn;
 
 	cn += `v${i.ver} "${vcn}"<br><br><table class="infot">
@@ -1217,7 +1217,7 @@ function requestJson(command, rinfo = true) {
 			var info = json.info;
 			var name = info.name;
 			d.getElementById('namelabel').innerHTML = name;
-			if (name === "Dinnerbone") {
+			if (name === "dogbone") {
 				d.documentElement.style.transform = "rotate(180deg)";
 			}
 			if (info.live) {
