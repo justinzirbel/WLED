@@ -1,7 +1,8 @@
 {
   "name": "wled",
-  "version": "0.13.3.4",
-  "releaseName": "Dr. Krusty GIT",
+  "version": "0.13.3.6",
+  "releaseName": "Frosty Night",
+  "upcomingReleaseNames": "Purple Glitter, twilight bonus, misty dream, fancy frog, withered haze, nameless limit, broken firefly, hidden boat, wandering bird",
   "description": "Tools for WLED project",
   "main": "tools/cdata.js",
   "directories": {
@@ -14,14 +15,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Aircoookie/WLED.git"
+    "url": "git+https://github.com/justinzirbel/WLED.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Aircoookie/WLED/issues"
+    "url": "https://github.com/justinzirbel/WLED/issues"
   },
-  "homepage": "https://github.com/Aircoookie/WLED#readme",
+  "homepage": "https://github.com/justinzirbel/WLED#readme",
   "dependencies": {
     "clean-css": "^4.2.3",
     "html-minifier-terser": "^5.1.1",
