@@ -1,8 +1,8 @@
 {
   "name": "wled",
-  "version": "0.13.3.6",
+  "version": "0.13.3.7",
   "releaseName": "Frosty Night",
-  "upcomingReleaseNames": "Purple Glitter, twilight bonus, misty dream, fancy frog, withered haze, nameless limit, broken firefly, hidden boat, wandering bird",
+  "upcomingReleaseNames": "Purple Glitter, twilight bonus, misty dream, fancy frog, withered haze, nameless limit, broken firefly, hidden boat, wandering bird, great nordham",
   "description": "Tools for WLED project",
   "main": "tools/cdata.js",
   "directories": {

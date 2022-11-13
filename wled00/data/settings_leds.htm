@@ -546,6 +546,71 @@ Length: <input type="number" name="XC${i}" id="xc${i}" class="l" min="1" max="65
       <i>Keep at default if you are unsure about your type of LEDs.</i><br>
     </div>
     <h3>Hardware setup</h3>
+    <div style="text-align: center;">For custom boards, see pin layout below.
+      <table>
+        <thead>
+          <tr>
+            <th>Board</th>
+            <th>Chip</th>
+            <th>D1</th>
+            <th>D2</th>
+            <th>D3</th>
+            <th>D4</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>MX1</td>
+            <td>D1</td>
+            <td>0</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>MX1</td>
+            <td>Mini 32</td>
+            <td>17</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>MX1</td>
+            <td>S2</td>
+            <td>18</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+          </tr>
+          <tr>
+            <td>EX4</td>
+            <td>D1</td>
+            <td>0</td>
+            <td>2</td>
+            <td>4</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <td>EX4</td>
+            <td>Mini 32</td>
+            <td>17</td>
+            <td>16</td>
+            <td>21</td>
+            <td>22</td>
+          </tr>
+          <tr>
+            <td>EX4</td>
+            <td>S2</td>
+            <td>18</td>
+            <td>16</td>
+            <td>33</td>
+            <td>35</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <br />
     <div id="mLC">LED outputs:</div>
     <hr style="width:260px">
     <button type="button" id="+" onclick="addLEDs(1,false)" style="display:none;border-radius:20px;height:36px;">+</button>

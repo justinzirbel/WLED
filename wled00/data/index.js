@@ -1707,8 +1707,9 @@ function setLor(i) {
 
 function setPreset(i) {
 	var obj = {"ps": i};
+	//console.log(obj);
 	if (isPlaylist(i)) obj.on = true;	//force on
-	showToast("Loading preset " + pName(i) +" (" + i + ")");
+	showToast("Loading preset number " + pName(i) +" (" + i + ")");
 	requestJson(obj);
 }
 
@@ -1938,7 +1939,7 @@ d.getElementById('heart').style.color = `hsl(${hc}, 100%, 50%)`;}, 910);
 
 function openGH()
 {
-	window.open("https://github.com/Aircoookie/WLED/wiki");
+	window.open("https://github.com/justinzirbel/WLED/wiki");
 }
 
 var cnfr = false;
